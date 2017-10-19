@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app theme color -->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#DD3F6D</color>
+    <color name="colorSecondary">#44BEC7</color>
+    <color name="colorBackground">@color/colorWhite</color>
+    <color name="colorShadow">#CECECE</color>
+
+    <!-- basic color -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#808080</color>
+    <color name="colorLightGray">#F4F5F6</color>
+    <color name="colorSilver">#C0C0C0</color>
+
+    <!-- transparent color -->
+    <color name="colorAccentTransparent">#80DD3F6D</color>
+    <color name="colorSecondaryTransparent">#8044BEC7</color>
+    <color name="colorSecondaryLightTransparent">#3344BEC7</color>
+    <color name="colorWhiteTransparent">#80FFFFFF</color>
+    <color name="colorBlackTransparent">#80000000</color>
+</resources>

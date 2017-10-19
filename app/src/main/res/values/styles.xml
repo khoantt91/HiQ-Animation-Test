@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Theme Base Application -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor" tools:targetApi="21">@color/colorBlack</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <!--<item name="android:windowLightStatusBar" tools:targetApi="23">true</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+
+        <!-- remove shadow below action bar Android < 5.0 -->
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Arrow back color -->
+        <item name="colorControlNormal">@color/colorBlack</item>
+    </style>
+
+</resources>
