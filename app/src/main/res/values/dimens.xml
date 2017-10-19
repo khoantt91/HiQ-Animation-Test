@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- font sizes -->
+    <dimen name="font_huger">45sp</dimen>
+    <dimen name="font_huge">32sp</dimen>
+    <dimen name="font_larger">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">15sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_huge">40dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_normal">14dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+
+    <!-- typical sizes of views -->
+    <dimen name="button_height_tall">60dp</dimen>
+    <dimen name="button_height_normal">40dp</dimen>
+    <dimen name="button_height_short">32dp</dimen>
+    <dimen name="button_width_normal">120dp</dimen>
+
+    <!-- width dimen -->
+    <dimen name="width_dp_300">300dp</dimen>
+    <dimen name="width_dp_232">232dp</dimen>
+    <dimen name="width_dp_200">200dp</dimen>
+    <dimen name="width_dp_180">180dp</dimen>
+    <dimen name="width_dp_148">148dp</dimen>
+    <dimen name="width_dp_120">120dp</dimen>
+    <dimen name="width_dp_100">100dp</dimen>
+    <dimen name="width_dp_80">80dp</dimen>
+    <dimen name="width_dp_60">60dp</dimen>
+    <dimen name="width_dp_40">40dp</dimen>
+    <dimen name="width_dp_20">20dp</dimen>
+
+    <!-- height dimen -->
+    <dimen name="height_dp_300">300dp</dimen>
+    <dimen name="height_dp_260">260dp</dimen>
+    <dimen name="height_dp_200">200dp</dimen>
+    <dimen name="height_dp_180">180dp</dimen>
+    <dimen name="height_dp_148">148dp</dimen>
+    <dimen name="height_dp_100">100dp</dimen>
+    <dimen name="height_dp_80">80dp</dimen>
+    <dimen name="height_dp_60">60dp</dimen>
+    <dimen name="height_dp_40">40dp</dimen>
+    <dimen name="height_dp_20">20dp</dimen>
+
+    <!-- special height dimen -->
+    <dimen name="scale_height_dp_450">450dp</dimen>
+    <dimen name="scale_height_dp_300">300dp</dimen>
+    <dimen name="scale_height_dp_232">232dp</dimen>
+    <dimen name="scale_height_dp_200">200dp</dimen>
+    <dimen name="scale_height_dp_180">180dp</dimen>
+    <dimen name="scale_height_dp_148">148dp</dimen>
+    <dimen name="scale_height_dp_100">100dp</dimen>
+    <dimen name="scale_height_dp_80">80dp</dimen>
+    <dimen name="scale_height_dp_60">60dp</dimen>
+    <dimen name="scale_height_dp_40">40dp</dimen>
+
+    <!-- special font sizes -->
+    <dimen name="scale_font_huger">45sp</dimen>
+    <dimen name="scale_font_huge">32sp</dimen>
+    <dimen name="scale_font_larger">22sp</dimen>
+    <dimen name="scale_font_large">18sp</dimen>
+    <dimen name="scale_font_normal">15sp</dimen>
+    <dimen name="scale_font_small">12sp</dimen>
+
+    <!--
+    0.75 - ldpi  (small)   //mdpi dimens *0.75
+    1.0  - mdpi  (normal)
+    1.5  - hdpi  (large)   //mdpi dimens *1.5
+    2.0  - xhdpi (xLarge)  //mdpi dimens *2.0 -->
+</resources>

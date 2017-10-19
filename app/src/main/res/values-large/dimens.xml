@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- special height dimen -->
+    <dimen name="scale_height_dp_450">675dp</dimen>
+    <dimen name="scale_height_dp_300">450dp</dimen>
+    <dimen name="scale_height_dp_232">348dp</dimen>
+    <dimen name="scale_height_dp_200">300dp</dimen>
+    <dimen name="scale_height_dp_180">270dp</dimen>
+    <dimen name="scale_height_dp_148">222dp</dimen>
+    <dimen name="scale_height_dp_100">150dp</dimen>
+    <dimen name="scale_height_dp_80">120dp</dimen>
+    <dimen name="scale_height_dp_60">90dp</dimen>
+    <dimen name="scale_height_dp_40">60dp</dimen>
+
+    <!-- special font sizes -->
+    <dimen name="scale_font_huger">68sp</dimen>
+    <dimen name="scale_font_huge">48sp</dimen>
+    <dimen name="scale_font_larger">33sp</dimen>
+    <dimen name="scale_font_large">27sp</dimen>
+    <dimen name="scale_font_normal">23sp</dimen>
+    <dimen name="scale_font_small">18sp</dimen>
+</resources>

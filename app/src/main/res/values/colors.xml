@@ -11,9 +11,13 @@
     <!-- basic color -->
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
-    <color name="colorGray">#808080</color>
+    <color name="colorGray">#daccb9</color>
     <color name="colorLightGray">#F4F5F6</color>
     <color name="colorSilver">#C0C0C0</color>
+    <color name="colorYellow">#F4eB14</color>
+    <color name="colorGreen">#95cf51</color>
+    <color name="colorRed">#e9bb9e</color>
+    <color name="colorBlue">#62a4f4</color>
 
     <!-- transparent color -->
     <color name="colorAccentTransparent">#80DD3F6D</color>

@@ -1,12 +1,13 @@
-package com.khoantt91.hiqanimationtest
+package com.khoantt91.hiqanimationtest.view
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.khoantt91.hiqanimationtest.R
 
-class MainActivity : AppCompatActivity() {
+class ImageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_image)
     }
 }

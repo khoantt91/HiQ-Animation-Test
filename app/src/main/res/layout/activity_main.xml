@@ -1,13 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.khoantt91.hiqanimationtest.MainActivity">
+    tools:context="com.khoantt91.hiqanimationtest.view.MainActivity">
+
+    <com.khoantt91.hiqanimationtest.view.widget.RoundRadiusImageView
+        android:id="@+id/roundRadiusImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scale_height_dp_232"
+        android:layout_margin="@dimen/spacing_normal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_smart_home_2"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCorners="topLeft|topRight"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/imgDocument"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/style_circle_yellow_color_bg"
+        android:scaleType="center"
+        android:src="@drawable/ic_document"
+        app:layout_constraintEnd_toStartOf="@id/imgImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundRadiusImageView"/>
+
+    <TextView
+        android:id="@+id/tvDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="Documents"
+        app:layout_constraintEnd_toEndOf="@id/imgDocument"
+        app:layout_constraintStart_toStartOf="@id/imgDocument"
+        app:layout_constraintTop_toBottomOf="@id/imgDocument"
+        />
+
+    <ImageView
+        android:id="@+id/imgImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/style_circle_green_color_bg"
+        android:scaleType="center"
+        android:src="@drawable/ic_image"
+        app:layout_constraintEnd_toStartOf="@id/imgVideo"
+        app:layout_constraintStart_toEndOf="@id/imgDocument"
+        app:layout_constraintTop_toBottomOf="@+id/roundRadiusImageView"/>
+
+    <TextView
+        android:id="@+id/tvImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="Images"
+        app:layout_constraintEnd_toEndOf="@id/imgImage"
+        app:layout_constraintStart_toStartOf="@id/imgImage"
+        app:layout_constraintTop_toBottomOf="@id/imgImage"
+        />
+
+    <ImageView
+        android:id="@+id/imgVideo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/style_circle_red_color_bg"
+        android:scaleType="center"
+        android:src="@drawable/ic_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgImage"
+        app:layout_constraintTop_toBottomOf="@+id/roundRadiusImageView"/>
+
+    <TextView
+        android:id="@+id/tvVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="Videos"
+        app:layout_constraintEnd_toEndOf="@id/imgVideo"
+        app:layout_constraintStart_toStartOf="@id/imgVideo"
+        app:layout_constraintTop_toBottomOf="@id/imgVideo"
+        />
+
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/style_circle_gray_color_bg"
+        android:scaleType="center"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintStart_toStartOf="@id/imgDocument"
+        app:layout_constraintTop_toBottomOf="@+id/tvDocument"/>
+
+    <TextView
+        android:id="@+id/tvSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="Setting"
+        app:layout_constraintEnd_toEndOf="@id/imgSetting"
+        app:layout_constraintStart_toStartOf="@id/imgSetting"
+        app:layout_constraintTop_toBottomOf="@id/imgSetting"
+        />
+
+    <ImageView
+        android:id="@+id/imgContact"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/style_circle_blue_color_bg"
+        android:scaleType="center"
+        android:src="@drawable/ic_contact"
+        app:layout_constraintStart_toStartOf="@id/imgImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvImage"/>
+
+    <TextView
+        android:id="@+id/tvContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="Contact"
+        app:layout_constraintEnd_toEndOf="@id/imgContact"
+        app:layout_constraintStart_toStartOf="@id/imgContact"
+        app:layout_constraintTop_toBottomOf="@id/imgContact"
+        />
 
 </android.support.constraint.ConstraintLayout>
