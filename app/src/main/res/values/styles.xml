@@ -19,4 +19,17 @@
         <item name="colorControlNormal">@color/colorBlack</item>
     </style>
 
+    <!-- Theme Title TextView -->
+    <style name="TitleTheme">
+        <item name="android:textSize">@dimen/font_larger</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme Title TextView Toolbar -->
+    <style name="TitleToolbarTheme" parent="TitleTheme">
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>

@@ -8,10 +8,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 import android.support.v4.app.ActivityOptionsCompat
 import android.transition.Slide
 import android.view.Gravity
+import com.bumptech.glide.Glide
 import com.khoantt91.hiqanimationtest.helper.TransitionHelper
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,28 +21,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     //region Setup View
-    private fun setupView() {
+    override fun setupView() {
 
         /* Setup Window Animation */
-        setupWindowAnimations()
+        setupSlideBottomWindowAnimations(ANIMATION.EXIT)
+        setupSlideBottomWindowAnimations(ANIMATION.REENTER)
+
+        /* Setup cover image */
+        Glide.with(this).load("https://i.pinimg.com/564x/15/a9/e2/15a9e27777396df41814e7da19b2f904.jpg").into(roundRadiusImageView)
 
         /* Event Listener */
         imgImage?.setOnClickListener { transitionTo(Intent(this, ImageActivity::class.java)) }
-    }
-    //endregion
-
-    //region Private Support Methods
-    private fun setupWindowAnimations() {
-        val slide = Slide()
-        slide.duration = 500
-        slide.slideEdge = Gravity.BOTTOM
-        window.exitTransition = slide
-    }
-
-    private fun transitionTo(i: Intent) {
-        val pairs = TransitionHelper.createSafeTransitionParticipants(this, true)
-        val transitionActivityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(this, *pairs)
-        startActivity(i, transitionActivityOptions.toBundle())
     }
     //endregion
 }
