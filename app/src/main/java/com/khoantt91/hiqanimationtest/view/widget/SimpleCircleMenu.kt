@@ -22,7 +22,7 @@ import java.util.ArrayList
  * Created by ThienKhoa on 10/20/17.
  */
 
-class SimpleCircleMenu constructor(context: Context, attrs: AttributeSet) : View(context, attrs) {
+class SimpleCircleMenu constructor(context: Context, attrs: AttributeSet?) : View(context, attrs) {
 
     //region Properties
     private var partSize: Int = 0

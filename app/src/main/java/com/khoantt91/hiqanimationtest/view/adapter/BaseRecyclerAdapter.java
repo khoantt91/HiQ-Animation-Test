@@ -19,7 +19,7 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
     //region Properties
     private List<T> objectList = Collections.emptyList();
     private Activity activity;
-    private OnAdapterListener listener;
+    public OnAdapterListener listener;
     //endregion
 
     //region Constructor

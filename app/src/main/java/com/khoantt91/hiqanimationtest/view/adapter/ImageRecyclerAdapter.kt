@@ -17,7 +17,7 @@ import com.bumptech.glide.module.AppGlideModule
  * Created by ThienKhoa on 5/10/17.
  */
 
-class ImageRecyclerAdapter(activity: Activity, listener: OnAdapterListener<*>?) : BaseRecyclerAdapter<Image>(activity, listener) {
+class ImageRecyclerAdapter(activity: Activity, listener: OnAdapterListener<Image>?) : BaseRecyclerAdapter<Image>(activity, listener) {
 
     private val TAG = ImageRecyclerAdapter::class.java.simpleName
 
