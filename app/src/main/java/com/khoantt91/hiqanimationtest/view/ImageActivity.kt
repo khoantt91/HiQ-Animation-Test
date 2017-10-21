@@ -14,6 +14,12 @@ import kotlinx.android.synthetic.main.view_toolbar_collapse.*
 import android.view.animation.Animation
 import android.view.animation.ScaleAnimation
 import com.khoantt91.hiqanimationtest.helper.DataInitHelper
+import android.view.ViewAnimationUtils
+import android.opengl.ETC1.getHeight
+import android.opengl.ETC1.getWidth
+import android.support.v4.content.ContextCompat
+import android.view.MotionEvent
+
 
 class ImageActivity : BaseActivity(), OnAdapterListener<Image> {
 
@@ -55,6 +61,7 @@ class ImageActivity : BaseActivity(), OnAdapterListener<Image> {
     //region Event Listener
     override fun onSelectedItemListener(model: Image, index: Int, view: View?) {
         if (view == null) return Logger.e(TAG, "ViewHolder is null")
+        revealLayoutMenuContainerAnim()
         deleteCellAnimation(view, index)
     }
 
@@ -123,6 +130,20 @@ class ImageActivity : BaseActivity(), OnAdapterListener<Image> {
         animate.fillAfter = true
         animate.setAnimationListener(animationListener)
         view.startAnimation(animate)
+    }
+
+    /* Reveal animation */
+    private fun revealLayoutMenuContainerAnim() {
+        layoutMenuContainer.visibility = View.VISIBLE
+        val finalRadius = Math.max(layoutMenuContainer.width, layoutMenuContainer.height)
+        val x = (layoutMenuContainer.x + layoutMenuContainer.width) / 2
+        val y = (layoutMenuContainer.y + layoutMenuContainer.height) / 2
+
+        val anim = ViewAnimationUtils.createCircularReveal(layoutMenuContainer, x.toInt(), y.toInt(), 0f, finalRadius.toFloat())
+        anim.duration = 400
+        layoutMenuContainer.setBackgroundColor(ContextCompat.getColor(this, R.color.colorBlue))
+
+        anim.start()
     }
     //endregion
 }

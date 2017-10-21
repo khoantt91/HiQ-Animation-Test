@@ -2,6 +2,7 @@
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -82,6 +83,16 @@
                 app:layout_constraintTop_toBottomOf="@id/tvColor"/>
 
         </android.support.constraint.ConstraintLayout>
+
     </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layoutMenuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:visibility="visible">
+
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

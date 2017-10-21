@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondaryTransparent"
+    android:orientation="vertical"
+    tools:context="com.khoantt91.hiqanimationtest.view.TestActivity">
+
+    <com.khoantt91.hiqanimationtest.view.widget.SimpleCircleMenu
+        android:id="@+id/circleMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"/>
+
+</LinearLayout>
