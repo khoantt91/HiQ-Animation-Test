@@ -6,6 +6,7 @@ import android.animation.ObjectAnimator
 import android.content.Context
 import android.graphics.Color
 import android.graphics.Point
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -98,8 +99,8 @@ class ImageActivity : BaseActivity(), OnAdapterListener<Image>, OnMenuSelectedLi
         val inflater = this@ImageActivity.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val layout = inflater.inflate(R.layout.view_popup_circle_menu, null, false)
 
-        popupWindow = PopupWindow(layout, pointDisplaySize.x, pointDisplaySize.y, true)
-        popupWindow?.isFocusable = true
+        popupWindow = PopupWindow(layout, pointDisplaySize.x, pointDisplaySize.y, false)
+        popupWindow?.isFocusable = false
         popupWindow?.isOutsideTouchable = true
         popupWindow?.showAtLocation(layout, Gravity.CENTER, 0, 0)
 
@@ -141,6 +142,14 @@ class ImageActivity : BaseActivity(), OnAdapterListener<Image>, OnMenuSelectedLi
             4 -> hideAnimationSimpleCircleMenu() //Setting
             5 -> hideAnimationSimpleCircleMenu() //Access
             else -> return
+        }
+    }
+
+    override fun onBackPressed() {
+        if (popupWindow != null && popupWindow?.isShowing == true) {
+            hideAnimationSimpleCircleMenu()
+        } else {
+            super.onBackPressed()
         }
     }
     //endregion
