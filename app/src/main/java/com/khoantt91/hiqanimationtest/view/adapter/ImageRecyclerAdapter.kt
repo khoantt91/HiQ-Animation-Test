@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.khoantt91.hiqanimationtest.R
 import com.khoantt91.hiqanimationtest.helper.Logger
 import com.khoantt91.hiqanimationtest.model.Image
-import com.bumptech.glide.module.AppGlideModule
 
 
 /**
@@ -28,7 +28,7 @@ class ImageRecyclerAdapter(activity: Activity, listener: OnAdapterListener<Image
 
     override fun bindView(image: Image?, position: Int, viewHolder: BaseRecyclerAdapter.BaseViewHolder) {
         if (image == null) return Logger.e(TAG, "Image is null")
-        Glide.with(activity).load(image.url).into(viewHolder.itemView as ImageView)
+        Glide.with(activity).load(image.url).diskCacheStrategy(DiskCacheStrategy.ALL).crossFade().placeholder(R.color.colorLightGray).into(viewHolder.itemView as ImageView)
 
         viewHolder.itemView.setOnClickListener {
             listener?.onSelectedItemListener(image, list.indexOf(image), viewHolder.itemView)
